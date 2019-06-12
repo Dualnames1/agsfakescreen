@@ -96,25 +96,25 @@ struct AGSGameOptions;
 #define CHF_NOWALKBEHINDS   0x80
 
 struct AGSCharacter {
-  int32 defview;
-  int32 talkview;
-  int32 view;
-  int32 room, prevroom;
-  int32 x, y, wait;
-  int32 flags;
+  int defview;
+  int talkview;
+  int view;
+  int room, prevroom;
+  int x, y, wait;
+  int flags;
   short following;
   short followinfo;
-  int32 idleview;           // the loop will be randomly picked
+  int idleview;           // the loop will be randomly picked
   short idletime, idleleft; // num seconds idle before playing anim
-  short transparency;       // if character is transparent
+  int transparency;       // if character is transparent
   short baseline;
-  int32 activeinv;
-  int32 talkcolor;
-  int32 thinkview;
-  int32 reserved[2];
+  int activeinv;
+  int talkcolor;
+  int thinkview;
+  int reserved[2];
   short walkspeed_y, pic_yoffs;
-  int32 z;
-  int32 reserved2[5];
+  int z;
+  int reserved2[5];
   short loop, frame;
   short walking, animating;
   short walkspeed, animspeed;

@@ -279,7 +279,7 @@ int CalculateThings()
 	  AGSObject *objec=engine->GetObject(i);
 	  
     int baseLine = objec->baseline;
-    if (baseLine == 0)
+    if (baseLine <= 0)
     {
       baseLine = objec->y;
     }
@@ -307,7 +307,7 @@ int CalculateThings()
 	if (getchar->room == playerRoom)
     {
 	  int baseLine = getchar->baseline;
-      if (baseLine == 0)
+      if (baseLine <= 0)
       {
 		  baseLine = getchar->y;
       }
